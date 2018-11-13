@@ -9,36 +9,33 @@
 #' @param lambda Estimate of power transformation factor to make \code{x} a normal distribution.
 #' @param delta Amount to shift x by to ensure positive values.
 #' @param plot_it Display a plot of \code{x} vs the output. Use logical.
-#' @return The vector \code{x}, transformed by the Box-Cox transformation.
+#' @return The vector \code{y}, which represents that transformation of \code{x} by the Box-Cox algorithm.
 
 boxcox <- function(x, lambda, delta, plot_it) {
-    #Test if x >0; if not, add a shift then proceed
+
+    #Box-Cox requires positive values, so a shift value should be applied if necessary; here, the shift is the user-specified 'delta'
     if (delta != 0){
-        #Find min(x) -> take absolute value to get difference between min(x) and 0
-        #Add delta to x
         x <- x + delta
     }
 
-    #Transform y
-    #If abs(lambda) > 3; then return error (this is to stop inappropriate use of the function, which is meant for only small transformations)
-
-    #Apply Box-Cox transformation
+    #Apply Box-Cox transformation to obtain new 'normalized' data set; here, lambda is user-specified, so normalization is not expected
     if (lambda == 0){
         y <- log(x)
     } else {
         y <- ((x^lambda) - 1) / lambda
     }
 
-    #Create plot
+    #Create plot of old vs. new data to see the transformation
     if (plot_it) print(
         ggplot2::qplot(x, y)
-        )
+    )
 
     return(y)
 }
 
 #' @rdname boxcox
 #' @export
+
 
 #Test 1: Check that negative x is corrected to positive values. (I.e. see that the shift value does what is expected)
 #Test 2: Test that lamba = 0  applies the correct function
