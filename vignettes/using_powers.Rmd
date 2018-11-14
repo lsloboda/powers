@@ -17,12 +17,13 @@ Want to compute powers without having to use `^` or `**`? Give `sqrt` some frien
 library(powers)
 ```
 
-Want squares, cubes, or reciprocals? Easy.
+Want squares, cubes, reciprocals, or boxcox? Easy.
 
 ```{r}
 square(1:10)
 cube(1:10)
 reciprocal(1:10)
+boxcox(1:10, 2)
 ```
 
 `apply`-family friendly, too!

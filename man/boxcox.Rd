@@ -16,7 +16,7 @@ boxcox(x, lambda, delta, plot_it)
 \item{plot_it}{Display a plot of \code{x} vs the output. Use logical.}
 }
 \value{
-The vector \code{x}, transformed by the Box-Cox transformation.
+The vector \code{y}, which represents that transformation of \code{x} by the Box-Cox algorithm.
 }
 \description{
 This function applies an estimate of the power transformation factor (lambda) in a deterministic power function to turn non-normal data into normal data.

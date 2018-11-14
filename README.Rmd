@@ -31,14 +31,14 @@ devtools::install_github("vincenzocoia/powers")
 
 ## Example
 
-See the vignette for more extensive use, but here's an example:
+See the vignette for more extensive use, but here's an example of the boxcox function:
 
 ```{r example}
-powers::reciprocal(2)
+powers::boxcox(1:10, 2)
 ```
 
 ## For Developers
 
 (Again, I don't actually intend for anyone to develop this silly package, but if I did, here's what I'd write.)
 
-Use the internal `pow` function as the machinery for the front-end functions such as `square`, `cube`, and `reciprocal`. 
+Use the internal `pow` function as the machinery for the front-end functions such as `square`, `cube`, `reciprocal`, and `boxcox`. 

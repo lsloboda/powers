@@ -13,12 +13,22 @@
 
 boxcox <- function(x, lambda, delta, plot_it) {
 
-    #Box-Cox requires positive values, so a shift value should be applied if necessary; here, the shift is the user-specified 'delta'
+    #Set sensible defaults
+    if(missing(x)){
+        return(print("Function requires a dataset"))}
+    if(missing(lambda)){
+        return(print("Function requires an estimate for lambda"))}
+    if(missing(delta)){
+        delta <- 0}
+    if(missing(plot_it)){
+        plot_it <- TRUE}
+
+    #Box-Cox requires positive values, so a shift value should be applied if specified
     if (delta != 0){
         x <- x + delta
     }
 
-    #Apply Box-Cox transformation to obtain new 'normalized' data set; here, lambda is user-specified, so normalization is not expected
+    #Apply Box-Cox transformation to obtain new 'normalized' data set
     if (lambda == 0){
         y <- log(x)
     } else {
@@ -29,24 +39,8 @@ boxcox <- function(x, lambda, delta, plot_it) {
     if (plot_it) print(
         ggplot2::qplot(x, y)
     )
-
     return(y)
 }
 
 #' @rdname boxcox
 #' @export
-
-
-#Test 1: Check that negative x is corrected to positive values. (I.e. see that the shift value does what is expected)
-#Test 2: Test that lamba = 0  applies the correct function
-#Test 3: Test that lambda != 0 applies the correct function
-#Test 4: Could compare it to the BoxCox function already in MASS
-
-#Test data set: mtcars
-#lm_model <- lm(mpg ~ cyl, data = mtcars)
-#plot(lm_model)
-
-#y <- boxcox(mtcars$cyl, -1, 0, FALSE)
-#boxcox_model <- lm(y ~ cyl, data = mtcars)
-#plot(boxcox_model)
-
