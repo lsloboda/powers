@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1542173500404.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9E3E6BE6",
+    "lastKnownWriteTime" : 1542174485,
+    "last_content_update" : 1542174485905,
+    "path" : "C:/Users/laura/Desktop/STAT 545 Exploratory Data Analysis/hw07-lsloboda/powers/tests/testthat/test_boxcox.R",
+    "project_path" : "tests/testthat/test_boxcox.R",
+    "properties" : {
+        "cursorPosition" : "16,91",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

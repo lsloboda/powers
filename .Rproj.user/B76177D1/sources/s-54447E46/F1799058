@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1542073763509.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "477865088",
+    "id" : "F1799058",
+    "lastKnownWriteTime" : 1542073210,
+    "last_content_update" : 1542073210,
+    "path" : "C:/Users/laura/Desktop/STAT 545 Exploratory Data Analysis/hw07-lsloboda/powers/R/powers-package.r",
+    "project_path" : "R/powers-package.r",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

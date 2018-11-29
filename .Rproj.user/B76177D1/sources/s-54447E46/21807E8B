@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1542073780486.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "21807E8B",
+    "lastKnownWriteTime" : 1542085051,
+    "last_content_update" : 1542085051653,
+    "path" : "C:/Users/laura/Desktop/STAT 545 Exploratory Data Analysis/hw07-lsloboda/powers/R/pow.R",
+    "project_path" : "R/pow.R",
+    "properties" : {
+        "cursorPosition" : "17,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

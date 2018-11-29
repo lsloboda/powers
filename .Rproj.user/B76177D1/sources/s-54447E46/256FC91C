@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1542080220123.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "256FC91C",
+    "lastKnownWriteTime" : 1542175320,
+    "last_content_update" : 1542175320320,
+    "path" : "C:/Users/laura/Desktop/STAT 545 Exploratory Data Analysis/hw07-lsloboda/powers/R/boxcox.R",
+    "project_path" : "R/boxcox.R",
+    "properties" : {
+        "cursorPosition" : "44,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
